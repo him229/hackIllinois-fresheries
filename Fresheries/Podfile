@@ -1,0 +1,24 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+use_frameworks!
+
+target 'Fresheries' do
+# Enables multiple options swipe
+pod 'MGSwipeTableCell'
+# For Using camera
+pod 'ALCameraViewController'
+#For the charts
+pod 'Charts'
+pod 'AFNetworking', '~> 2.5'
+pod 'JGProgressHUD'
+end
+
+target 'FresheriesTests' do
+
+end
+
+target 'FresheriesUITests' do
+
+end
+
