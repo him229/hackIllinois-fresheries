@@ -63,6 +63,10 @@ Carousel
 {
 	 margin-top:50px;
 }
+.bottom-buffer
+{
+	 margin-bottom:30px;
+}
 .carousel-control{
 	background: transparent;
 	width: 14px;
