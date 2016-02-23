@@ -17,9 +17,10 @@ app.logger.setLevel(logging.ERROR)
 def hello_world():
 	return render_template('index.html')
 
-@app.route('/test')
-def hi():
-	return 'just testing'
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static', 'img'),
+                               'favicon.ico', mimetype='image/png')
 
 @app.route('/upload', methods=['GET', 'POST'])
 def upload_file():
